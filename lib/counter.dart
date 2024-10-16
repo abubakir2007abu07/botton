@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 
+@override
+Widget build(BuildContext context) {
+  return const Center(
+    child: Text('Counter'),
+  );
+}
+
 class CounterScreen extends StatefulWidget {
   const CounterScreen({super.key});
 
@@ -13,25 +20,50 @@ class _CounterScreenState extends State<CounterScreen> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counter = (_counter + 10) % 1000;
+    });
+  }
+
+  void _decrementCounter() {
+    setState(() {
+      if (_counter > .0000) {
+        _counter--;
+      }
+    });
+  }
+
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(''),
-      ),
       body: Center(
-        child: Text(
-          'Counter: $_counter',
-          style: const TextStyle(fontSize: 24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              '$_counter',
+              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _incrementCounter,
+              child: const Text('QOSHISH'),
+            ),
+            ElevatedButton(
+              onPressed: _decrementCounter,
+              child: const Text('AYRISH'),
+            ),
+            ElevatedButton(
+              onPressed: _resetCounter,
+              child: const Text('0'),
+            ),
+          ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        child: const Icon(Icons.add),
       ),
     );
   }
