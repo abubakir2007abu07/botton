@@ -20,7 +20,7 @@ class _CounterScreenState extends State<CounterScreen> {
 
   void _incrementCounter() {
     setState(() {
-      _counter = (_counter + 10) % 1000;
+      _counter = (_counter + 2) % 1000;
     });
   }
 
