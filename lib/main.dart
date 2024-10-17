@@ -1,5 +1,6 @@
 import 'package:botton/counter.dart';
 import 'package:botton/home.dart';
+import 'package:botton/home2.dart';
 import 'package:botton/profile.dart';
 import 'package:botton/search.dart';
 import 'package:flutter/material.dart';
@@ -34,6 +35,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const SearchScreen(),
     const CounterScreen(),
+    const Home2Screen(),
     const ProfileScreen(),
   ];
 
@@ -46,7 +48,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex],
+      body: IndexedStack(index: _selectedIndex, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
@@ -58,15 +60,19 @@ class _MainScreenState extends State<MainScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: 'Search',
+            label: 'SEARCH',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.countertops),
-            label: 'Counter',
+            label: 'PULS',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.heart_broken_sharp),
+            label: 'LiKe',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile',
+            label: 'ПРОФИЛЬ',
           ),
         ],
       ),
