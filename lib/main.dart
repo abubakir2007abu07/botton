@@ -67,7 +67,7 @@ class _MainScreenState extends State<MainScreen> {
             label: 'PULS',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.heart_broken_sharp),
+            icon: Icon(Icons.favorite),
             label: 'LiKe',
           ),
           BottomNavigationBarItem(
