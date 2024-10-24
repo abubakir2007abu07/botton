@@ -89,92 +89,155 @@ class ProfileScreen extends StatelessWidget {
           ],
         ),
         Container(
-          margin: EdgeInsets.all(15),
+          margin: EdgeInsets.all(20),
           height: 100,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('ball'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('ali'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('sen'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('abu'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('biz'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('ular'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('vidio'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('osh'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text('eski'),
+                ],
               ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
-              ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
-              ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
-              ),
-              Container(
-                width: 60,
-                height: 60,
-                decoration:
-                    BoxDecoration(shape: BoxShape.circle, color: Colors.black),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 65,
+                    height: 65,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(height: 5),
+                  Text('kim'),
+                ],
               ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
